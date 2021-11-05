@@ -76,7 +76,7 @@ xgb_valid = xgb.DMatrix(data = as.matrix(valid_X), label = valid_y)
 
 model = xgb.train(
   data = xgb_train,
-  nrounds = 50,
+  nrounds = 100,
   watchlist = list(train = xgb_train,
                    valid = xgb_valid),
   params = model_params
